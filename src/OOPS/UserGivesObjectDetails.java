@@ -11,7 +11,7 @@ public class UserGivesObjectDetails {
 
         // taking input from user for Student class.
         for (int i = 0; i<n ; i++){
-            System.out.println("Enter Details of Student" + i);
+            System.out.println("Enter Details of Student " + (i+1));
             System.out.println("Enter ID of student: ");
             int id = sc.nextInt();
             sc.nextLine();

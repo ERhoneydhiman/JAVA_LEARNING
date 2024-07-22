@@ -1,10 +1,10 @@
 package OOPS;
 
 public class Student {
-     private int id;
-     private String n;
-     private String c;
-     private double f;
+     private final int id;
+     private final String n;
+     private final String c;
+     private final double f;
 
      public Student(int id, String name , String course, Double fee){
          this.id = id;
