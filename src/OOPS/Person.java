@@ -1,16 +1,16 @@
 package OOPS;
 
 public class Person {
-    private int id ;
-    private String name;
-    private Address address;
-    private String contect;
+    private final int id ;
+    private final String name;
+    private final Address  address;
+    private final String contact;
 
-    public Person(int id, String name, Address address, String contect){
+    public Person(int id, String name, Address address, String contact){
         this.id = id;
         this.name = name;
         this.address = address;
-        this.contect = contect;
+        this.contact = contact;
     }
 
 
@@ -24,21 +24,14 @@ public class Person {
     public Address getAddress(){
         return address;
     }
-    public String getContect(){
-        return contect;
+    public String getContact(){
+        return contact;
     }
 
-
-//    public void setId(int id){
-//        this.id = id;
-//    }
-//    public void setName(String name){
-//        this.name = name;
-//    }
-//    public void setAddress(String address){
-//        this.address = address;
-//    }
-//    public void setContect(String contect){
-//        this.contect = contect;
-//    }
+    public void displayAll(){
+        System.out.println("ID: "+id);
+        System.out.println("NAME: "+name);
+        System.out.println(address);
+        System.out.println("CONTACT on: "+ contact);
+    }
 }

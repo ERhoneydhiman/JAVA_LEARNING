@@ -1,27 +1,25 @@
 package OOPS;
 
 public class Employee extends Person{
-       private String role;
-       private Double salery;
+       private final String role;
+       private final Double salary;
 
-       public Employee(int id, String name, Address address, String contect,String role, double salery){
-           super(id, name, address, contect);
+       public Employee(int id, String name, Address address, String contact,String role, double salary){
+           super(id, name, address, contact);
            this.role = role;
-           this.salery = salery;
+           this.salary = salary;
        }
 
         public String getRole(){
                 return role;
         }
-        public Double getSalery(){
-                return salery;
+        public Double getSalary(){
+                return salary;
         }
 
-//        public void setRole(String role){
-//                this.role = role;
-//        }
-//
-//        public void setSalery(Double salery){
-//                this.salery = salery;
-//        }
+    public void displayDetails(){
+        super.displayAll();
+        System.out.println("SALARY of employee is: "+ salary);
+        System.out.println("employee work as : "+role);
+    }
 }
