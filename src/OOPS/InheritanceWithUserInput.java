@@ -45,7 +45,7 @@ public class InheritanceWithUserInput {
                 students.add(new Student(id, name, address, contact, course, fees));
 
                 System.out.println("added");
-                System.out.println("Add more(enter 1 for yes & 0 for no).");
+                System.out.println("Add more(enter 1 for yes & ANY OTHER key for no).");
                 isYes = sc.nextInt();
             }
         }else {
@@ -94,7 +94,7 @@ public class InheritanceWithUserInput {
                 students.add(new Employee(id, name, address,  contact, role,  salary));
 
                 System.out.println("added");
-                System.out.println("Add more(enter 1 for yes & 0 for no).");
+                System.out.println("Add more(enter 1 for yes & ANY OTHER key for no).");
                 isYes = sc.nextInt();
             }
         }else {

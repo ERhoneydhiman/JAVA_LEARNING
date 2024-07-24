@@ -18,6 +18,7 @@ public class Employee extends Person{
         }
 
     public void displayDetails(){
+        System.out.println("******************************");
         super.displayAll();
         System.out.println("SALARY of employee is: "+ salary);
         System.out.println("employee work as : "+role);

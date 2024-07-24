@@ -21,6 +21,7 @@ public class Student extends Person{
 
 
         public void displayDetails(){
+                System.out.println("******************************");
                 super.displayAll();
                 System.out.println("FEES of student is: "+fees);
                 System.out.println("student enrolled in : "+course);
