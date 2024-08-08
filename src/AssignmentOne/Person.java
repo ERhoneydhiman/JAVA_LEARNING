@@ -5,8 +5,8 @@ public class Person {
 //    age attribute. Create two instances of the "Person" class, set their attributes
 //    using the constructor, and print their name and age.
 
-    protected String name ;
-    protected int age;
+    public String name ;
+    protected Integer age;
 
     public Person(String name, int age){
         this.name = name;
