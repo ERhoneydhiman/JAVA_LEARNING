@@ -1,5 +1,6 @@
 package AssignmentOne;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Main {
@@ -102,12 +103,19 @@ public class Main {
 
 
 //         Gym
-        GymMembership g1 = new GymMembership("rohan", "normal");
+//        GymMembership g1 = new GymMembership("rohan", "normal");
+//
+//        System.out.println(g1.payableFees(3));
+//
+//        PremiumGymMembership pg1 = new PremiumGymMembership("rahul", "premium", true, true);
+//
+//        System.out.println(pg1.payableFees(3));
 
-        System.out.println(g1.payableFees(3));
 
-        PremiumGymMembership pg1 = new PremiumGymMembership("rahul", "premium", true, true);
-
-        System.out.println(pg1.payableFees(3));
+//        Event
+        Event e1 = new Event("bday", "meerut", LocalDate.of(2024, 8, 23));
+        e1.displayDetails();
+        Seminar s1 = new Seminar("java seminar", "delhi", LocalDate.of(2024, 9, 3),5);
+        s1.displayDetails();
     }
 }
