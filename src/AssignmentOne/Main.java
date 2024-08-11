@@ -128,7 +128,13 @@ public class Main {
 //        w1.extendWarranty(3);
 //        System.out.println(w1.price);
 
-//
+// Course
+
+        Course c1 = new Course("Java full stack", "Jhon dee", 5000.0);
+        System.out.println(c1.displayCourse());
+
+        OnlineCourse oc1 = new OnlineCourse("MERN", "R.K sharma", 8000.0, "Zoom", 2.5);
+        System.out.println(oc1.displayCourse());
 
     }
 }
