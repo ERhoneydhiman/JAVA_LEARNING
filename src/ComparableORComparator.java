@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class ComparableORComparator {
 //    use is sorting of complex objects.
@@ -38,24 +39,33 @@ public class ComparableORComparator {
 
         Scanner sc = new Scanner(System.in);
 
-        int x = sc.nextInt();
-        switch (x){
-            case 1:
-                Collections.sort(stuList,new NameComparator());
-                break;
-            case 2:
-                Collections.sort(stuList,new IDComparator());
-                break;
-            case 3:
-                Collections.sort(stuList,new CourseComparator());
-                break;
-            case 4:
-                Collections.sort(stuList, new AgeComparator());
-                break;
-            default:
-                System.out.println("something wrong!!!!!");
-        }
+//        int x = sc.nextInt();
+//        switch (x){
+//            case 1:
+//                Collections.sort(stuList,new NameComparator());
+//                break;
+//            case 2:
+//                Collections.sort(stuList,new IDComparator());
+//                break;
+//            case 3:
+//                Collections.sort(stuList,new CourseComparator());
+//                break;
+//            case 4:
+//                Collections.sort(stuList, new AgeComparator());
+//                break;
+//            default:
+//                System.out.println("something wrong!!!!!");
+//        }
 
-        System.out.println(stuList);
+//        System.out.println(stuList);
+
+
+//        STREAM
+        Stream<Student> stream = stuList.stream();
+        stream.sorted(new IDComparator())
+        .map(Student::toString).forEach(System.out::println);
+
+        stream.map(Student::toString).forEach(System.out::println);
+
     }
 }
