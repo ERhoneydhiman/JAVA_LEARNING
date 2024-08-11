@@ -111,11 +111,12 @@ public class Main {
 //
 //        System.out.println(pg1.payableFees(3));
 
+// Building
+//        CommercialBuilding c1 = new CommercialBuilding("delhi", 6, 1000.0, 50);
+//        System.out.println(c1.rent(500000.0, 3));
+//        ResidentialBuilding r1 = new ResidentialBuilding("meerut", 8, 2000.0, 120);
+//        System.out.println(r1.rent(400000.0, 2));
 
-//        Event
-        Event e1 = new Event("bday", "meerut", LocalDate.of(2024, 8, 23));
-        e1.displayDetails();
-        Seminar s1 = new Seminar("java seminar", "delhi", LocalDate.of(2024, 9, 3),5);
-        s1.displayDetails();
+
     }
 }
