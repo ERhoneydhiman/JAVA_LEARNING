@@ -101,7 +101,6 @@ public class Main {
 //        System.out.println(sa1.total_balance);
 
 
-
 //         Gym
 //        GymMembership g1 = new GymMembership("rohan", "normal");
 //
@@ -117,6 +116,19 @@ public class Main {
 //        ResidentialBuilding r1 = new ResidentialBuilding("meerut", 8, 2000.0, 120);
 //        System.out.println(r1.rent(400000.0, 2));
 
+// ElectronicsProducts
+
+//        ElectronicsProduct e1 = new ElectronicsProduct("ABC123", "Philips LED", 2000.0);
+//        System.out.println(e1.price);
+//        e1.applyDiscount(20);
+//        System.out.println(e1.price);
+
+//        WashingMachine w1 = new WashingMachine("jkl876", "bajaj x4", 3000.0, 2);
+//        System.out.println(w1.price);
+//        w1.extendWarranty(3);
+//        System.out.println(w1.price);
+
+//
 
     }
 }
